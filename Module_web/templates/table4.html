@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content%}
+  
+<table class="tableau-style">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YAOUNDE</th>
+      <th>DOUALA</th>
+      <th>BAFOUSSAN</th>
+      <th>GAROUA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> NB_BANQUE</td>
+      <td>{{yh}} </td>
+      <td> {{dh}} </td>
+      <td> {{bh}} </td>
+      <td> {{gh}} </td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="text-align: center;color: red">REPRESENTATION DES NOMBRES DE BANQUE PAR VILLE</h2>
+<center>
+  <img id="hotel" class="graph bar" alt="hotel stat" src="data:image/jpeg;base64,{{ g }}">
+</center>
+{% endblock%}

@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block content%}
+<h1>Nombre de distraction(Yaoundé)</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Quartier</td>
+                <td>Nombre Distraction</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for distraction in distractions['Yaoundé']  %}
+            <tr>
+                <td>{{ distraction["quartier_name"] }}</td>
+                <td>{{ distraction["distraction_count"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Nombre de distraction(Douala)</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Quartier</td>
+                <td>Nombre Distraction</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for distraction in distractions['Douala']  %}
+            <tr>
+                <td>{{ distraction["quartier_name"] }}</td>
+                <td>{{ distraction["distraction_count"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Nombre de distraction(Garoua)</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Quartier</td>
+                <td>Nombre Distraction</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for distraction in distractions['Garoua']  %}
+            <tr>
+                <td>{{ distraction["quartier_name"] }}</td>
+                <td>{{ distraction["distraction_count"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Nombre de distraction(Bafoussam)</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Quartier</td>
+                <td>Nombre Distraction</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for distraction in distractions['Bafoussam']  %}
+            <tr>
+                <td>{{ distraction["quartier_name"] }}</td>
+                <td>{{ distraction["distraction_count"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock%}

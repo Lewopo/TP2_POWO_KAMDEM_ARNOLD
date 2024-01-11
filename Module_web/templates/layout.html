@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY APP</title>
+  <!-- <link rel="stylesheet" href="flex.css"> -->
+  <link rel="stylesheet" href="{{url_for('static',filename='/grid.css')}}">
+</head>
+<body>
+
+  <nav>
+    <a href="/">Acceuil</a>
+    <a href="/question1">HOT-RESTAU</a>
+    <a href="/question2">HOTEL</a>
+    <a href="/question3">CEN_INT</a>
+    <a href="/question4">BANQUE</a>
+    <a href="/question5">LUXE</a>
+    <a href="/question6">DISTRACTION</a>
+
+  </nav>
+
+  {% block content%}
+    {% endblock%}
+   
+  <footer style="color: aliceblue;">Tous droits réservés</footer>
+</body>
+</html>

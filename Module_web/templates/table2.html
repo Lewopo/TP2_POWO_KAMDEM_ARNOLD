@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content%}
+  
+<table class="tableau-style">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YAOUNDE</th>
+      <th>DOUALA</th>
+      <th>BAFOUSSAN</th>
+      <th>GAROUA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> HOTEL  A PLUS DE 3 ETOILES</td>
+      <td>{{yh}} </td>
+      <td> {{dh}} </td>
+      <td> {{bh}} </td>
+      <td> {{gh}} </td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="text-align: center;color: red">REPRESENTATION DU NOMBRE D'HOTEL A PLUS DE 3  ETOILE PAR VILLE</h2>
+<center>
+  <img id="hotel" class="graph bar" alt="hotel stat" src="data:image/jpeg;base64,{{ g }}">
+</center>
+{% endblock%}

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: century;
+}
+body{
+    background-color: #fff;
+}
+
+header{
+    /*background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./image/HN_machine_learning_ist.jpg);*/
+    background-color: rgb(26, 33, 105);
+    height: 11vh;
+    background-size: cover; 
+    background-position: center;
+}
+.logo a{
+    color: #fff;
+    padding: 0px 20px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(red, green, blue, alpha);
+}
+.logo span{
+    color: rgb(238, 56, 11);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+ul{
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover{
+    background: #fff;
+    color: black;
+}
+
+ul li.active a{
+background: #fff;
+color: #000;
+}
+.principale{
+    margin: 0 auto;
+
+}
+ .titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+ 
+ .titre h1{
+     color: rgb(26, 33, 105);
+     font-size: 75px;
+ }
+
+ .bouton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+
+ .bouton a{
+    color: red;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+ }
+
+ .btn{
+    transition: 0.06s ease;
+ }
+
+ .btn:hover{
+    background-color: rgb(26, 33, 105);
+    color: #fff;
+ }
+
+ .tableau-style{
+    border-collapse: collapse;
+    min-width: 400px;
+    width: auto;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin: 100px auto;
+    border: 2px solid midnightblue;
+  }
+  
+  thead tr {
+    background-color: midnightblue;
+    color: #fff;
+    text-align: left;
+  }
+  
+  th,td{
+    padding: 15px 20px;
+  }
+  
+  tbody tr,td,th{
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+    
+  }
+.principale{
+    margin-bottom: 2rem;
+}

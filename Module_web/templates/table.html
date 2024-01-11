@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content%}
+  
+<table class="tableau-style">
+  <thead>
+    <tr>
+      <th></th>
+      <th>YAOUNDE</th>
+      <th>DOUALA</th>
+      <th>BAFOUSSAN</th>
+      <th>GAROUA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> RESTAURENT</td>
+      <td> {{yr}}</td>
+      <td> {{dr}}</td>
+      <td> {{br}}</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> HOTEL</td>
+      <td> {{yh}}</td>
+      <td> {{dh}}</td>
+      <td> {{bh}}</td>
+      <td> 18</td>
+    </tr>
+  </tbody>
+</table>
+<h2 style="text-align: center;color: red">REPRESENTATION DU PRIX MOYEN DES HOTELS</h2>
+<center>
+  <img id="hotel" class="graph bar" alt="hotel stat" src="data:image/jpeg;base64,{{ g }}">
+</center>
+
+<h2 style="text-align: center;color: red">REPRESENTATION DU PRIX MOYEN DES RESTAURANTS</h2>
+<center>
+<img id="hotel" class="graph bar" alt="hotel stat" src="data:image/jpeg;base64,{{ h }}">
+</center>
+{% endblock%}

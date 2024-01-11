@@ -1,0 +1,87 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+nav {
+  background: #d40707;
+  padding: 15px;
+  text-align: center;
+}
+nav a {
+  color: #222;
+}
+.content {
+  padding: 125px 50px 50px;
+  background: #fff;
+}
+h1 {
+  color: #bb0a0a;
+  text-align: center;
+}
+footer {
+  background: #d40505;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  margin: 10px;
+  font-weight: 500;
+  transition: 0.6s ease;
+}
+
+nav a:hover{
+  background: #fff;
+  color: black;
+}
+ nav.active a{
+background: #fff;
+color: #000;
+}
+
+
+.tableau-style{
+  border-collapse: collapse;
+  min-width: 400px;
+  width: auto;
+  box-shadow: 0 5px 50px rgba(145, 14, 14, 0.027);
+  cursor: pointer;
+  margin: 100px auto;
+  border: 2px solid rgb(177, 8, 8);
+}
+
+thead tr {
+  background-color: rgb(177, 8, 8);
+  color: #fff;
+  text-align: left;
+}
+
+th,td{
+  padding: 15px 20px;
+}
+
+tbody tr,td,th{
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+  background-color: #f3f3f3;
+  
+}
